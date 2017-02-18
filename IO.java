@@ -44,11 +44,12 @@ public class OI {
 
 	
     //Winch
-    	Button winchStart = new JoystickButton(leftController, XboxController.Y);
-    	launch.whenPressed(new OpenGear());
-    	Button winchStart = new JoystickButton(leftController, XboxController.B);
-    	launch.whenPressed(new CloseGear());
-    // 	LaunchGroup.whenPressed(new LaunchGroup());
+    	Button startWinch = new JoystickButton(leftController, XboxController.Y);
+    	//Button autoAim = new JoystickButton(driveController, XboxController.Start);
+    	Button stopWinch = new JoystickButton(leftController, XboxController.X);  
+    	startWinch.whenPressed(new startWinch());
+        stopLatch.whenPressed(new stopWinch());
+
 
 
 
