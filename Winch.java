@@ -18,11 +18,11 @@ public class Winch extends Subsystem {
     	LiveWindow.addActuator("Winch", "Winch",winch);
     }
     
-    public void winchStart() {
+    public void startWinch() {
     	motor.set(1);
     }
     
-    public void winchStop() {
+    public void stopWinch() {
     	motor.set(-1);
     }
 }
